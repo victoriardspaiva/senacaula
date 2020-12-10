@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        body {
+            background-color: azure;
+            color: midnightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>  Cadastro de aluno </h1>
+
+    <input type="text" placeholder="Nome" name="nome" id="nome">
+    <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome"> <br><br>
+    <input type="date" name="data" id="data" > 
+    <input type="email" name="email" id="email" placeholder="Email"> <br> <br>
+    <button onclick="mudarNome()">Mudar nome</button> <br><br>
+    <button onclick="mudarSobrenome()">Mudar Sobrenome</button> <br><br>
+    <button onclick="mudarEmail()">Mudar Email</button> <br><br>
+    <button onclick="mudarData()">Mudar Data</button> <br><br>
+    <button onclick="limparCampos()">Limpar</button> <br><br>
+
+</body>
+
+<script>
+    function mudarNome(){
+        document.getElementById("nome").value ="Victoria"
+    }
+    function mudarSobrenome(){
+        document.getElementById("sobrenome").value = "Paiva"
+    }
+    function mudarEmail(){
+        document.getElementById("email").value = "victoriardspaiva@recife.pe.senac.br"
+    }
+    function mudarData(){
+        document.getElementById("data").value = "2020/12/10"
+    } 
+    function limparCampos(){
+        document.getElementById("nome").value = ""
+        document.getElementById("sobrenome").value = ""
+        document.getElementById("email").value = ""
+        document.getElementById("data").value = ""
+
+    }
+
+</script>
+</html>
